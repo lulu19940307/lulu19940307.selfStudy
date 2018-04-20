@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>自动对对联系统</title>
+		<style type="text/css">
+		    body{
+		     	margin:0;
+		     	padding:0;
+		     	background-color: #eee;
+		    }
+	        .container{
+	        	width:50%;
+	        	height:100%;
+	            /*border:1px solid red;*/
+	            margin:0 auto;
+	        }
+	        .container h2{
+	        	text-align: center;
+	        }
+	        .container p{
+	        	text-align: center;
+	        	font-weight: 500;
+	        	color:#333;
+	        	font-size:18px;
+	        }
+	        .couple-up{
+	        	width:100%;
+	        	height:50px;
+	        	margin:0 auto;
+	        	/*border:1px solid blue;*/
+	        	margin-bottom:10px;
+	        	line-height:50px ;
+	        	text-align: center;
+	        }
+	        .couple-up-content{
+	        	width:45%;
+	        	color:cornflowerblue;
+	        	height:30px;
+	        	line-height:30px ;
+	        	font-size: 16px;
+	        	font-weight:bold ;
+	        	font-family: "微软雅黑";
+	        	text-align: center;
+	        }
+	        
+	        .buttton-container{
+	        	width:25%;
+	        	height:40px;
+	        	margin:0 auto;
+	            margin-bottom:10px;
+	            position: relative;
+	        }
+	        button{
+	        	/*width:20px;*/
+	        	display:inline-block;
+	        	width:100%;
+	        	height:100%;
+	            color:dodgerblue;
+	        	font-size:15px ;
+	        	border:none;
+	        	border:1px solid slategray;
+	        	border-radius:8px ;
+	        	position: absolute;
+	        	left:-20px;
+	        	
+	        }
+	        .couple-down{
+	        	width:100%;
+	        	height:50px;
+	        	margin:0 auto;
+	        	/*border:1px solid blue;*/
+	        	margin-bottom:10px;
+	        	line-height:50px ;
+	        	position: relative;
+	        }
+	         .couple-down-content{
+	        	width:45%;
+	        	color:cornflowerblue;
+	        	height:30px;
+	        	line-height:30px ;
+	        	font-size: 16px;
+	        	font-weight:bold ;
+	        	font-family: "微软雅黑";
+	        	margin:0 auto;
+	        	position: absolute;
+	        	left:157px;
+	        	top:7.5px;
+	        	text-align: center;
+	        }
+	        
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>欢迎使用自动对对联系统</h1>
+			<p>对联小贴士：上联符合平仄规则（如最后一个字是仄声），效果会更好哦!</p>
+			<div class="couple-up">
+				<span>请输入或修改上联：</span>
+				<input type="text" class="couple-up-content" id="couple-up-content"/>
+				<span> (*必须为10个字以内的汉字) </span>
+			</div>
+			<div class="buttton-container">
+				<button id="btn">
+				点击自动生成下联
+			    </button>
+			</div>
+			<div class="couple-down">
+				<input type="text" class="couple-down-content" id="couple-down-content"/>
+			</div>
+			
+		</div>
+		
+		<script type="text/javascript">
+		    function createxhr(){
+	            var xhr=null;
+	        	if(window.XMLHttpRequest){
+					xhr=new XMLHttpRequest();
+				}else{
+					xhr=new ActiveXObject("Microsoft.XMLHttp");
+				}
+				return xhr;
+			}
+		    var btn=document.getElementById("btn");
+		    btn.onclick=function(){
+		    	
+		    	var couple_up_content=document.getElementById("couple-up-content");
+		        var txt=couple_up_content.value;
+		        var couple_down_content=document.getElementById("couple-down-content");
+		    	//alert(txt)
+		    	var xhr=createxhr();
+		    	var url="http://101.132.79.199:5000/chat/couplet/"+txt;
+		    	//alert(url);
+		    	xhr.open("get",url,true);
+		    	xhr.onreadystatechange=function(){
+			        if(xhr.readyState==4&&xhr.status==200){
+				        var resTxt=xhr.responseText;
+				        
+				        //console.log(resTxt);
+				        var jsonres = eval('(' + resTxt + ')');
+				        couple_down_content.value=jsonres.output;
+			        }
+		        }
+		    	xhr.send(null);
+		    }
+		    
+		</script>
+	</body>
+</html>
