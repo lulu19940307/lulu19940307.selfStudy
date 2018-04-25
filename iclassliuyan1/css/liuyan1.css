@@ -1,0 +1,130 @@
+body{
+	margin:0;
+	padding:0;
+}
+.container{
+	width:80%;
+	height:100%;
+	margin:0 auto;
+}
+.header{
+	width:100%;
+	height:80px;
+	line-height:80px ;
+	/*background-color: yellow;*/
+}
+.header a{
+	text-decoration: none;
+	font-size:18px ;
+	color:#00B3EA;
+}
+.header .logo,.header .personal_photo{
+	/*display: inline-block;*/
+	width:50px;
+	height:50px;
+	vertical-align: middle;
+}
+.header .personal_photo{
+	margin-left:350px;
+}
+.header .item1,.header .item2{
+	display:inline-block ;
+	width:70px;
+	height:60px;
+	line-height:60px ;
+	border-radius:10px ;
+	text-align: center;
+	
+}
+.header .item1{
+	margin-left:30px;
+}
+.header .item3,.header .item4{
+	display:inline-block ;
+	width:100px;
+	height:60px;
+	line-height:60px ;	
+	border-radius:10px ;
+	text-align: center;
+}
+
+.header .item5{
+	display:inline-block ;
+	width:140px;
+	height:60px;
+	line-height:60px ;
+	border-radius:10px ;
+	text-align: center;
+	
+}
+.item5 a{
+	color:cadetblue;
+}
+.header .item_focus{
+	background-color: #00B3EA;
+	/*background-color: red;*/
+}
+.item_focus a{
+	color:#fff;
+}
+.exitLink{
+	margin-left:20px;
+}
+.content_header{
+	width:100%;
+	height:100px;
+	/*background-color:red ;*/
+	margin:0 auto;
+}
+.reflash{
+	width:90px;
+	height:50px;
+	float:right;
+	line-height: 50px;
+	margin-top:25px ;
+	border: 0px;
+	background-color: #00B3EA;
+	font-size:20px ;
+	color:#fff;
+	border-radius:10px ;
+}
+
+.msg1{
+	width:90%;
+	height:80px;
+	margin:0 auto;
+	/*background-color: yellow;*/
+	border:1px solid #00B3EA;
+	border-radius:8px ;
+}
+.msg1 span{
+	display:inline-block;
+	width:160px;
+	height:40px;
+	line-height: 40px;
+/*	background-color: red;*/
+	text-align: center;
+	margin:20px 20px;
+	font-size:18px;
+	color:grey;
+}
+.msg1 .msg_number{
+	color:red;
+}
+
+.msg1 .entrance{
+	width:100px;
+	height:40px;
+	background-color: #00B3EA;
+	border-radius:5px ;
+	color:#fff;
+	border:0px;
+	font-size:16px ;
+	float:right;
+	margin-top:20px ;
+	margin-right:50px; ;
+}
+.content_main div{
+	margin-top:5px;
+	margin-bottom:15px;
+}
