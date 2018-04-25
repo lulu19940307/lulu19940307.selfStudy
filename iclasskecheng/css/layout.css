@@ -7,7 +7,6 @@ body{
 	
 }
 
-
 button{
 	border:0px;
 }
@@ -24,6 +23,7 @@ button{
 	height:100px;
 	line-height: 100px;
 	background-color:#fff ;
+	/*background-color:red ;*/
 	
 }
 .header .banner{
@@ -31,6 +31,7 @@ button{
 	height:100px;
 	margin:0 auto;
 	background-color:#fff;
+	/*background-color:red ;*/
 	
 }
 .banner .logo, .banner .personal_photo{
@@ -41,7 +42,7 @@ button{
 	margin-left:20px;
 }
 .banner .personal_photo{
-	margin-left:210px;
+	margin-left:58px;
 }
 .banner .item {
 	display:inline-block;
@@ -50,13 +51,11 @@ button{
 	line-height:50px ;
 	width:90px;
 	border-radius:15px ;
-	text-align: center;
-	
-	
+	text-align: center;	
+	vertical-align: middle;
 }
 .banner .item_focus{
-	background-color:#60bff2 ;
-	
+	background-color:#60bff2 ;	
 }
 .header a
 {
@@ -67,23 +66,18 @@ button{
 	color:#fff;
 }
 #exitLink{
-	
-	float: right;
-	margin-right:20px ;
+	margin-left:30px ;
 }
 .class_code{
 	display:inline-block;
-	line-height:40px;
-	/*margin:10px 40px;*/
-	margin:10px 20px;
-	
-	position: absolute;
-	top:-5px;
-	/*right:280px;*/
-	right:380px;
-	
+	height:40px;
+	line-height:20px;
+	margin:10px 40px;
+	text-align:center ;
+	position: relative;
+	top:10px;	
 }
-.class_code div{
+.class_code span{
 	font-size:14px ;
 	text-align:center;
 	color:#00b3ea;
