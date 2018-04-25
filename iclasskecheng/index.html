@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>课程信息</title>
+		<meta name=”viewport” content=”width=device-width, initial-scale=1″ />
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<!--<script type="text/javascript" src="js/class_information.js" ></script>-->
+		<script type="text/javascript">
+			function delete_students(btn){
+				//alert("nihao");
+				//var tr=btn.parentNode.parentNode;
+				//tr.parentNode.removeChild(tr);
+				$(btn).parent().parent().remove();
+				
+			}
+		</script>
+	</head>
+	<body>
+			<div class="header">
+			    <div class="banner">
+				    <img class="logo" src="img/QQ.png" />
+			    	<span class="item"><a href="#">首页</a></span>
+				    <span class="item item_focus" ><a href="#">课程信息</a></span>
+				    <span class="item"><a href="#">签到</a></span>
+				    <span class="item"><a href="#">答题</a></span>
+				    <span class="item"><a href="#">留言</a></span>
+				    <span class="item"><a href="#">课程资料</a></span>
+				    <div class="class_code" >
+				    	<div>课程编号</div>
+				    	<div>4ZS147001</div>
+				    </div>
+				    <img src="img/weibo.png" class="personal_photo"/>
+				    <a id="exitLink" href="#">退出</a>
+			    </div>
+			    
+			</div>
+			
+			<div class="clearfix"></div>
+			<div class="content_banner">
+			    <div class="content_left">
+			    	<p class="class_title">信息工程与社会</p>
+			    	<p class="main_techer">主讲人：王国中&nbsp;&nbsp;&nbsp;&nbsp;教授</p>
+			    	<p class="other_techers">参讲人：李国平&nbsp;&nbsp;滕国伟&nbsp;&nbsp;赵海武</p>
+			    	<p class="class_number">课程编号：4ZS147001</p>
+			    	<div class="class_information">
+			    		<span>课程简介：</span>
+			    		<div>
+			    			巴拉阿拉的是很低的第额的都饿狗都啊都顾大哥恶搞的你他妈饿的要的巴拉阿拉
+			    			的是很低的第额的都饿狗都啊都顾大哥恶搞的你他妈饿的要的巴拉阿拉的是很低
+			    			的第额的都饿狗都啊都顾大哥恶搞的你他妈饿的要的巴拉阿拉的是很低的第额的
+			    			都饿狗都啊都顾大哥恶搞的你他妈饿的要的
+			    		</div>
+			    	</div>
+			    	<div class="teacher_information">
+				    	<span>教师简介：</span>
+				    	<div>
+				    			巴拉阿拉的是很低的第额的都饿狗都啊都顾大哥恶搞的你他妈饿的要的巴拉阿拉
+				    			的是很低的第额的都饿狗都啊都顾大哥恶搞的你他妈饿的要的巴拉阿拉的是很低
+				    			的第额的都饿狗都啊都顾大哥恶搞的你他妈饿的要的巴拉阿拉的是很低的第额的
+				    			都饿狗都啊都顾大哥恶搞的你他妈饿的要的
+				    	</div>
+			    	</div>
+			    </div>
+			    
+			    <div class="content_right">
+			    	<div class="right_banner">		    		
+			    		<button type="button" class="reflash">刷新</button>		    		
+			    		<p class="students_list">学生列表--共51人</p>
+			    		<button type="button" class="export">导出</button>	
+			    	</div>
+			    	
+			    	<table>
+			    		<tr>
+			    			<th width="15%">序号</th>
+			    			<th width="25%">学号</th>
+			    			<th width="25%">姓名</th>
+			    			<th width="35%">操作</th>
+			    		</tr>
+			    		<tr align="center">
+			    			<td>1</td>
+			                <td>16721234</td>
+			                <td>黄璐璐</td>	
+			                <td><button type="button" class="delete" onclick="delete_students(this);">移出课堂</button></td>
+			    		</tr>
+			    		<tr align="center">
+			    			<td>2</td>
+			                <td>16721233</td>
+			                <td>朱丽莎</td>	
+			                <td><button type="button" class="delete" onclick="delete_students(this);">移出课堂</button></td>
+			    		</tr>
+			    	</table>
+			    	
+			    </div>
+		    </div>
+		
+	</body>
+</html>
