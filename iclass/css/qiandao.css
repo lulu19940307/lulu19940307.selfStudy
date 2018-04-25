@@ -1,0 +1,150 @@
+body{
+	/*background: blue;*/
+	width:100%;
+	height:100%;
+	margin: 0;
+	padding: 0;
+	/*background-color: #00B3EA;*/
+}
+.container{
+	width:100%;
+	height:100%;	
+}
+.container img{
+	display: block;
+	width:100%;
+	height:100%;
+	opacity:0.8 ;
+}
+
+.header{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100px;
+	background-color: #fff;
+}
+.header .banner{
+	width:80%;
+	height:100%;
+	line-height:100px ;
+	margin:0 auto;
+	background-color: #fff;
+	/*z-index:99 ;*/
+}
+
+.banner .logo{
+	display: inline-block;
+	height:60px;
+	width:60px;
+	vertical-align: middle;
+	
+}
+
+.banner .item,.banner .main{
+	display:inline-block;
+    height:60px;
+    width:90px;
+    line-height:60px ;
+    
+    display: inline-block;
+    margin-top:20px;
+    margin-left:20px;
+    text-align:center;
+    border-radius:10px ;
+    font-size:18px ;
+    /*background-color:yellow ;*/
+}
+.banner .main{
+	margin-left:40px;
+}
+
+.banner a,.main a{
+	text-decoration: none;
+	color:#666666;
+}
+.banner .item_focus{
+	background-color:#60bff2 ;
+}
+.item_focus a{
+	color:#fff;
+}
+.banner .class_code{
+	display:inline-block;
+	width:120px;
+	height:70px;
+	line-height:35px;
+	/*background-color: rosybrown;*/
+	position: absolute;
+	top:5px;
+	margin:0 40px;
+}
+.class_code{
+	text-align:center ;
+	font-size:15px ;
+	color:#60bff2;
+}
+.banner .personal_photo{
+	display: inline-block;
+	height:60px;
+	width:60px;
+	vertical-align: middle;
+	margin-left: 180px;
+}
+#exitLink{
+	
+	float:right;
+}
+
+.content{
+	width:80%;
+	height:965px;
+	margin:0 auto;
+	margin-top:100px;
+	background-color: #fff;
+	opacity: 0.5;
+	position: absolute;
+	top:0;
+	left:10%;
+	/*margin:0 auto;*/
+}
+
+.content_banner{
+	width:100%;
+	height:80px;
+	/*background-color: yellow;*/
+	line-height:80px ;
+}
+
+.content_banner .new,.content_banner .export{
+	width:90px;
+	height:40px;
+	border-radius:8px ;
+	background-color:#60bff2 ;
+	border:0;
+	color:#fff;
+}
+.content_banner .export{
+	float:right;
+	margin-top:20px;
+}
+.content_main table{
+	width:100%;
+	border:2px solid #fff;
+	border-collapse: collapse;
+}
+table th{
+	background-color:#60bff2 ;
+}
+table td,table th{
+	border:2px solid #fff;
+	padding:5px;
+}
+table .details,table .delete{
+	width:60px;
+	height:40px;
+	background-color:#60bff2 ;
+	border-radius:4px ;
+	border:0px;
+	color:#fff;
+}

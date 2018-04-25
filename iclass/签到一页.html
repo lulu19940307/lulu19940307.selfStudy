@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>签到一页</title>
+		<link rel="stylesheet" href="css/qiandao.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript">
+			function delete_students(btn){
+				$(btn).parent().parent().remove();
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<img src="img/03-02.jpg"/>
+			<div class="header">
+				<div class="banner">
+					<img src="img/QQ.png" class="logo"/>
+					<span class="main"><a href="#">首页</a></span>
+				    <span class="item item_focus" ><a href="#">课程信息</a></span>
+				    <span class="item"><a href="#">签到</a></span>
+				    <span class="item"><a href="#">答题</a></span>
+				    <span class="item"><a href="#">留言</a></span>
+				    <span class="item"><a href="#">课程资料</a></span>
+				    <div class="class_code" >
+				    	<div>课程编号</div>
+				    	<div>4ZS147001</div>
+				    </div>
+				    <img src="img/weibo.png" class="personal_photo"/>
+				    <a id="exitLink" href="#">退出</a>
+				</div>
+			</div>
+			
+			<div class="content">
+				<div class="content_banner">
+					<button type="button" class="new">
+						新建签到
+					</button>
+					<button type="button" class="export">
+						导出
+					</button>
+				</div>
+				<div class="content_main">
+					<table>
+						<tr>
+							<th width="5%">序号</th>
+							<th width="15%">开始时间</th>
+							<th width="32%">备注</th>
+							<th width="10%">时长</th>
+							<th width="8%">签到率</th>
+							<th width="5%">正常</th>
+							<th width="5%">未签</th>
+							<th width="5%">其他</th>
+							<th width="15%">操作</th>
+						</tr>
+						<tr align="center">
+							<td>55</td>
+							<td>2018-03-11 14:50:23</td>
+							<td>第一次课</td>
+							<td>15</td>
+							<td>80%</td>
+							<td>16</td>
+							<td>3</td>
+							<td>1</td>
+							<td>
+								<button type="button" class="details">
+									详情
+								</button>
+								<button type="button" class="delete" onclick="delete_students(this)">
+									删除
+								</button>
+							</td>
+						</tr>
+						
+					</table>
+				</div>
+		    </div>
+			
+		</div>
+		
+		
+	</body>
+</html>
