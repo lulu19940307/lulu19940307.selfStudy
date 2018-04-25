@@ -37,13 +37,16 @@ button{
     width:60px;
 	vertical-align: middle;
 }
+.logo{
+	margin-left:20px;
+}
 .banner .personal_photo{
 	margin-left:210px;
 }
 .banner .item {
 	display:inline-block;
 	font-size:17px;
-	margin:0 10px;
+	margin:0 5px;
 	line-height:50px ;
 	width:90px;
 	border-radius:15px ;
@@ -66,15 +69,18 @@ button{
 #exitLink{
 	
 	float: right;
+	margin-right:20px ;
 }
 .class_code{
 	display:inline-block;
 	line-height:40px;
-	margin:10px 40px;
+	/*margin:10px 40px;*/
+	margin:10px 20px;
 	
 	position: absolute;
 	top:-5px;
-	right:280px;
+	/*right:280px;*/
+	right:380px;
 	
 }
 .class_code div{
