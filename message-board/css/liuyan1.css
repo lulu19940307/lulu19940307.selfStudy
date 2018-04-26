@@ -14,7 +14,8 @@
 	display:flex;
 	flex-direction:row ;
 	align-items: center;
-	background-color: yellow;
+	justify-content:space-between;
+	/*background-color: yellow;*/
 }
 .header a{
 	text-decoration: none;
@@ -26,50 +27,18 @@
 	height:60px;
 	
 }
-.header .personal_photo{
-	margin-left:280px;
-}
 
-.header .item1,.header .item2{
-	width:70px;
-	height:60px;
-	line-height:60px ;
-	border-radius:10px ;
-	text-align: center;
-	margin-left:20px;
-	/*background-color: red;*/
-}
 
-.header .item3,.header .item4{
-	display:inline-block ;
-	width:100px;
-	height:60px;
-	line-height:60px ;	
-	border-radius:10px ;
-	text-align: center;
-	margin-left:20px;
-	/*background-color: red;*/
-}
-
-.header .item5{
-	display:inline-block ;
-	width:160px;
-	height:60px;
-	line-height:60px ;
-	border-radius:10px ;
-	margin-left:20px;
-	text-align: center;
-	/*background-color: red;*/
-}
 .header .item_focus{
 	background-color: #00B3EA;
-	
+	height:60px;
+	border-radius:8px ;
+	width: 10%;
+	text-align: center;
+	line-height:60px ;
 }
 .item_focus a{
 	color:#fff;
-}
-.exitLink{
-	margin-left:20px;
 }
 .content_header{
 	width:100%;
