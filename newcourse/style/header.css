@@ -1,0 +1,69 @@
+.header{
+    width:100%;
+    height:100px;
+    background-color:#fff ;
+    z-index: 10;
+}
+.header .banner{
+    width:80%;
+    height:100px;
+    margin:0 auto;
+    background-color:#fff;
+
+}
+.header a
+{
+    color:#666;
+    text-decoration:none;
+}
+.item_focus a{
+    color:#fff;
+}
+.center-flex span{
+    display: block;
+    line-height: 60px;
+}
+.center-flex img{
+    width: 50px;
+    height: 50px;
+}
+.center-flex.conetnent{
+    height: 100px;
+}
+.item{
+    width: 100px;
+    height: 60px;
+    text-align: center;
+}
+.item a{
+
+    line-height: 60px;
+}
+.focus{
+    border-radius: 10px;
+    background: #00B3EA;
+}
+.text-ellipsis{
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.class_information,.teacher_information{
+    padding: 10px;
+}
+.text-ellipsis::after {
+    content:"...";
+    font-weight:bold;
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding:0 20px 1px 45px;
+    background:url('省略号icon') repeat-y;
+}
+.logo{
+    border: none;
+    width:50px ;
+    height: 50px;
+    background-size: contain;
+    background-repeat:no-repeat ;
+    background-image: url('https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=79b45729fb039245a1b5e609bfafc3ff/d52a2834349b033be1cf5d3e12ce36d3d439bd8b.jpg');
+}

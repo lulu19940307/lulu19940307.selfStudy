@@ -1,0 +1,38 @@
+//flex布局
+// center vertical / horizontal
+.flex{
+	display: flex;
+}
+.center-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+//垂直居中
+  .center-flex-v {
+	  display: flex;
+	  align-items: center;
+  }
+//水平垂直居中
+  .center-hv {
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  transform: translate(-50%, -50%);
+  }
+//水平居中
+  .center-h {
+	  position: absolute;
+	  left: 50%;
+	  transform: translateX(-50%);
+  }
+//垂直居中
+  .center-v {
+	  position: absolute;
+	  top: 50%;
+	  transform: translateY(-50%);
+  }
+  .flex-b{
+	  display: flex;
+	  justify-content: space-between;
+  }

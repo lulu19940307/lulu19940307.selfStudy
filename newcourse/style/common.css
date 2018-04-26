@@ -1,0 +1,13 @@
+.line-b{
+    border: 1px solid #E3E3E3;
+}
+button a{
+    text-decoration:none;
+    color: #ffffff;
+}
+.image-bg{
+    background: url("../assets/03-02.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size:cover ;
+    background-size: cover ;
+}
