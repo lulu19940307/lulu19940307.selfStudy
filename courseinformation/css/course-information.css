@@ -1,0 +1,168 @@
+body {
+	padding: 0;
+	margin: 0;
+	background: url(../img/bg.jpg);
+}
+
+.container {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	
+}
+button {
+	border: 0px;
+}
+.header {
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.header a {
+	color: #666;
+	text-decoration: none;
+}
+
+.header .logo,.header .personal_photo {
+	height: 60px;
+	width: 60px;
+}
+.header .logo{
+	margin-left:8%;
+}
+.header .class_code {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.header .item{
+	font-size:17px;
+}
+	
+.item_focus a{
+	color:#fff;
+}
+#exitLink{
+	margin-right:8%;
+}
+.header .item_focus{
+	background-color:#60bff2 ;
+	width:10%;
+	height:70px;
+	line-height:70px;
+	text-align: center;
+	border-radius:15px
+}
+
+
+/*内容部分*/
+.content_banner {
+	width: 100%;
+	height: 1000px;
+	margin: 0 auto;
+	opacity: 0.55;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.content_banner .content_left {
+	width: 49.25%;
+	height: 1000px;
+	background-color: #fff;
+	opacity: 0.8;
+}
+.content_banner .content_right {
+	height: 1000px;
+	width: 49.25%;
+	background-color: #fff;
+	opacity: 0.8;
+}
+.class_title,
+.main_techer,
+.other_techers,
+.class_number {
+	display: block;
+	width: 85%;
+	height: 28px;
+	line-height: 28px;
+	margin: 0 auto;
+	padding-top: 15px;
+	padding-bottom: 4px;
+	text-align: center;
+	font-size: 22px;
+	color: #666;
+}
+.main_techer,
+.other_techers {
+	font-size: 19px;
+	padding-top: 4px;
+}
+.class_number {
+	font-size: 15px;
+	padding-top: 4px;
+}
+.class_information,
+.teacher_information {
+	width: 85%;
+	height: 280px;
+	margin: 0 auto;
+	border: 1px solid #00b3ea;
+	border-radius: 10px;
+	padding:5px;
+}
+.teacher_information {
+	margin-top: 15px;
+}
+.right_banner {
+	width: 100%;
+	height: 50px;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.reflash,
+.export {
+	
+	height: 40px;
+	width: 20%;
+	background-color: #00b3ea;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 10px;
+}
+
+.students_list {
+	color: #666;
+}
+table {
+	margin: 0 auto;
+	margin-top: 15px;
+	width: 100%;
+	border: 2px solid #fff;
+	border-collapse: collapse;
+}
+table th,
+table td {
+	border: 2px solid #aaa;
+	padding: 10px;
+}
+th {
+	background-color: #00b3ea;
+	color: #666;
+}
+.delete {
+	height: 40px;
+	width: 95%;
+	background-color: #00b3ea;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 10px;
+}

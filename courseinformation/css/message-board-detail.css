@@ -1,86 +1,45 @@
-body{
+*{
 	margin:0;
 	padding:0;
 }
-.clearfix:after{
-	content:"";
-	display:block;
-	height:0;
-	line-height:0;
-	clear:both;
-	zoom:1;
-}
 .header_container{
-    border-bottom:1px solid gainsboro;
-    width:100%;
-    height:80px;
+	width:100%;
+	height:100%;
+	margin:0 auto;
 }
-    
 .header{
 	width:80%;
 	height:80px;
 	line-height:80px ;
-	margin:0 auto;
+	display:flex;
+	flex-direction:row ;
+	align-items: center;
+	justify-content:space-between;
+	margin:0 auto ;
 	/*background-color: yellow;*/
-
 }
 .header a{
 	text-decoration: none;
 	font-size:18px ;
 	color:#00B3EA;
-	
 }
 .header .logo,.header .personal_photo{
-	/*display: inline-block;*/
-	width:50px;
-	height:50px;
-	vertical-align: middle;
-}
-.header .personal_photo{
-	margin-left:350px;
-}
-.header .item1,.header .item2{
-	display:inline-block ;
-	width:70px;
+	width:60px;
 	height:60px;
-	line-height:60px ;
-	border-radius:10px ;
-	text-align: center;
 	
-}
-.header .item1{
-	margin-left:30px;
-}
-.header .item3,.header .item4{
-	display:inline-block ;
-	width:100px;
-	height:60px;
-	line-height:60px ;	
-	border-radius:10px ;
-	text-align: center;
 }
 
-.header .item5{
-	display:inline-block ;
-	width:140px;
-	height:60px;
-	line-height:60px ;
-	border-radius:10px ;
-	text-align: center;
-	
-}
-.item5 a{
-	color:cadetblue;
-}
+
 .header .item_focus{
 	background-color: #00B3EA;
-	/*background-color: red;*/
+	height:60px;
+	border-radius:8px ;
+	width: 10%;
+	text-align: center;
+	line-height:60px ;
 }
 .item_focus a{
 	color:#fff;
-}
-.exitLink{
-	margin-left:20px;
 }
 .content_header{
 	width:80%;

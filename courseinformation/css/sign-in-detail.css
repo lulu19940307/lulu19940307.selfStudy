@@ -1,10 +1,8 @@
 body{
-	/*background: blue;*/
 	width:100%;
 	height:100%;
 	margin: 0;
 	padding: 0;
-	/*background-color: #00B3EA;*/
 }
 .container{
 	width:100%;
@@ -16,86 +14,60 @@ body{
 	height:100%;
 	opacity:0.8 ;
 }
-
 .header{
 	position:absolute;
 	top:0;
 	width:100%;
 	height:100px;
 	background-color: #fff;
-}
-.header .banner{
-	width:80%;
-	height:100%;
-	line-height:100px ;
-	margin:0 auto;
-	background-color: #fff;
-	/*z-index:99 ;*/
+	display: flex;
+	flex-direction:row ;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.banner .logo{
-	display: inline-block;
+.header .logo{
 	height:60px;
 	width:60px;
-	vertical-align: middle;
+	margin-left: 8%;
+}
+
+.header .personal_photo{
+	height:60px;
+	width:60px;
 	
 }
-
-.banner .item,.banner .main{
-	display:inline-block;
-    height:60px;
-    width:90px;
-    line-height:60px ;
-    
-   /* display: inline-block;*/
-    margin-top:20px;
-    margin-left:20px;
-    text-align:center;
-    border-radius:10px ;
-    font-size:18px ;
-    /*background-color:yellow ;*/
+.header .item{
+	height:60px;
+	line-height:60px ;
+	font-size:18px ;
 }
-.banner .main{
-	margin-left:40px;
+.class_code{
+	display: flex;
+	flex-direction:column ;
+	align-items: center;
+	justify-content: center;
 }
 
-.banner a,.main a{
+.header .item_focus{
+	background-color:#60bff2 ;
+	width:10%;
+	height:70px;
+	line-height:70px;
+	text-align: center;
+	border-radius:15px;	
+}
+.header .item_focus a{
+	color:#fff;
+}
+.header a{
 	text-decoration: none;
 	color:#666666;
 }
-.banner .item_focus{
-	background-color:#60bff2 ;
-}
-.item_focus a{
-	color:#fff;
-}
-.banner .class_code{
-	display:inline-block;
-	width:120px;
-	height:70px;
-	line-height:35px;
-	/*background-color: rosybrown;*/
-	position: absolute;
-	top:5px;
-	margin:0 40px;
-}
-.class_code{
-	text-align:center ;
-	font-size:15px ;
-	color:#60bff2;
-}
-.banner .personal_photo{
-	display: inline-block;
-	height:60px;
-	width:60px;
-	vertical-align: middle;
-	margin-left: 180px;
-}
-#exitLink{
-	
-	float:right;
-}
 
+#exitLink{
+	margin-right: 8%;
+}
 .content{
 	width:80%;
 	height:965px;
@@ -137,6 +109,10 @@ body{
 .content_banner .back{
 	float:right;
 	margin-top:20px;
+}
+.content_banner .back a{
+	text-decoration: none;
+	color:#fff ;
 }
 .content_main{
 	width:100%;

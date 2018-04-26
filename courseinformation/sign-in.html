@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>签到一页</title>
-		<link rel="stylesheet" href="css/qiandao.css" />
+		<link rel="stylesheet" href="css/sign-in.css" />
 		<script type="text/javascript" src="js/jquery.js" ></script>
 		<script type="text/javascript">
 			function delete_students(btn){
@@ -15,21 +15,21 @@
 		<div class="container">
 			<img src="img/03-02.jpg"/>
 			<div class="header">
-				<div class="banner">
+				
 					<img src="img/QQ.png" class="logo"/>
-					<span class="main"><a href="#">首页</a></span>
-				    <span class="item item_focus" ><a href="#">课程信息</a></span>
-				    <span class="item"><a href="#">签到</a></span>
-				    <span class="item"><a href="#">答题</a></span>
-				    <span class="item"><a href="#">留言</a></span>
-				    <span class="item"><a href="#">课程资料</a></span>
+					<div class="item"><a href="#">首页</a></div>
+				    <div class="item " ><a href="course-information.html">课程信息</a></div>
+				    <div class="item item_focus"><a href="#">签到</a></div>
+				    <div class="item"><a href="#">答题</a></div>
+				    <div class="item"><a href="message-board.html">留言</a></div>
+				    <div class="item"><a href="#">课程资料</a></div>
 				    <div class="class_code" >
 				    	<div>课程编号</div>
 				    	<div>4ZS147001</div>
 				    </div>
 				    <img src="img/weibo.png" class="personal_photo"/>
 				    <a id="exitLink" href="#">退出</a>
-				</div>
+				
 			</div>
 			
 			<div class="content">
@@ -46,13 +46,13 @@
 						<tr>
 							<th width="5%">序号</th>
 							<th width="15%">开始时间</th>
-							<th width="32%">备注</th>
+							<th width="27%">备注</th>
 							<th width="10%">时长</th>
 							<th width="8%">签到率</th>
 							<th width="5%">正常</th>
 							<th width="5%">未签</th>
 							<th width="5%">其他</th>
-							<th width="15%">操作</th>
+							<th width="20%">操作</th>
 						</tr>
 						<tr align="center">
 							<td>55</td>
@@ -64,9 +64,12 @@
 							<td>3</td>
 							<td>1</td>
 							<td>
-								<button type="button" class="details">
+								
+								<a href="sign-in-detail.html">
+									<button type="button" class="details">
 									详情
-								</button>
+									</button>	
+								</a>
 								<button type="button" class="delete" onclick="delete_students(this)">
 									删除
 								</button>
