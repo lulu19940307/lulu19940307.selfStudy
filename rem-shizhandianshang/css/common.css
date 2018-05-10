@@ -303,7 +303,7 @@ header {
 .share .line{
 	height:2px;
 	flex:1;
-	background-color:darkgray ;
+	background-color:#999 ;
 	margin-left:20px;
 }
 .shareMethod{
