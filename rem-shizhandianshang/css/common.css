@@ -209,7 +209,9 @@ header {
 	margin-right: 10px;
 }
 .color_info,.size_info{
-	margin:0 auto;
+	/*margin:0 auto;*/
+	display:flex;
+	justify-content: center;
 	margin-bottom:20px ;
 	font-size:0.8rem ;
 	color:darkgray;
@@ -331,10 +333,8 @@ header {
 	border-right: 0.3rem solid transparent;
     transform:rotate(45deg);
     position: absolute;
-    top:0.2rem;
+    top:0.23rem;
     right:1.5rem;
-    
-    /*margin-top:0.4rem;*/
 }
 .number{
 	font-size:0.5rem;
@@ -344,5 +344,5 @@ header {
 	background-color: #fff;
 	text-align: center;
 	clear:both;
-	border-radius: 3px;
+	
 }
