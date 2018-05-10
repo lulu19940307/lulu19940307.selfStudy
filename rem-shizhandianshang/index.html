@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>rem实战电商</title>
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<script type="text/javascript">
+		    (function setSize(){
+		    	var _html=document.getElementsByTagName("html")[0];
+				var ch=document.documentElement.clientWidth;
+				ch > 640 ? _html.style.fontSize="40px" : _html.style.fontSize = ch / 16 + "px";
+				window.onresize=setSize();
+		    })()
+			
+		</script>
+		<link rel="stylesheet" href="css/common.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header_bar">
+				<span class="back iconfont">&#xe61c;</span>
+				<span class="txt">Woman，Dresses</span>
+				<span class="shopCar iconfont">&#xe64f;<i>3</i></span>
+			</div>
+			<div class="btn">
+				<a href="#" class="gm">add to wishlist</a>
+				<a href="#" class="gwc">add to cart</a>
+			</div>
+		</header>
+		<div class="banner">
+			<div class="banner_imgs">
+				<ul>
+					<li class="current"><img src="img/remimg/03-02.jpg"/></li>
+					<li><img src="img/remimg/03-01.jpg"/></li>
+					<li><img src="img/remimg/1.jpg"/></li>
+				</ul>
+				<ol>
+					<li class="current"></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+			
+			
+			<div class="banner_text">
+				<p class="banner_info">Elegant Pink Dresses</p>
+				<a href="#" class="banner_buy">$ 605,00</a>
+			</div>
+		</div>
+		
+		<div class="des">
+			<div class="add iconfont">&#xe669;</div>
+			<span>Description</span>
+		</div>
+		
+		<div class="colorAndSize">
+			<div class="color"> 
+				<div class="color_img iconfont">&#xe655;</div>
+				<div class="color_txt">Color:</div>
+			</div>
+			<div class="color_info">Choose a color for item</div>
+			<div class="color_div">
+				<div class="color_one current"><div class="iconfont">&#xe672;</div></div>
+				<div class="color_two"></div>
+				<div class="color_three"></div>
+			</div>
+			<div class="line"></div>
+			<div class="size"> 
+				<div class="size_img iconfont">&#xe601;</div>
+				<div class="size_txt">Size:</div>
+			</div>
+			<div class="size_info">Size available for this item</div>
+			<div class="size_div">
+				<div class="size_one">6</div>
+				<div class="size_two current">8</div>
+				<div class="size_three">10</div>
+				<div class="size_four">12</div>
+				<div class="size_five">14</div>
+			</div>
+		</div>
+		
+		<div class="addtocart">Add to Cart</div>
+		<div class="share">
+			<div>SHARE ON</div>
+			<div class="line"></div>
+		</div>
+		
+		<div class="shareMethod">
+			<div class="shareqq">
+				<div class="iconfont">&#xe602;</div>
+				<div class="sanjiaoxing"></div>
+				<div class="number">205</div>
+			</div>
+			<div class="shareweibo">
+				<div class="iconfont">&#xe795;</div>
+				<div class="sanjiaoxing"></div>
+				<div class="number">332</div>
+			</div>
+			<div class="sharerenren">
+				<div class="iconfont">&#xe600;</div>
+				<div class="sanjiaoxing"></div>
+				<div class="number">112</div>
+			</div>
+		</div>
+	</body>
+</html>

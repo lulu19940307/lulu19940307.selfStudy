@@ -1,0 +1,348 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	font-family: "微软雅黑";
+	background-color:darkgray ;
+}
+img {
+	border: none;
+	vertical-align: top;
+}
+
+em,i {
+	font-style: normal;
+}
+
+header {
+	background-color: #38474f;
+	padding: .6rem;
+	margin-bottom:0.65rem;
+}
+.header_bar{
+	height:1.5rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 0.9rem;
+}
+.txt{
+	flex:1;
+	font-size:.8rem ;
+	color:#fff;
+	padding-left:20px;
+}
+@font-face {
+	font-family: "abc";
+	src: url("../font_659690_g4ryeby6h7fa8aor/iconfont.eot");
+	src: url("../font_659690_g4ryeby6h7fa8aor/iconfont.eot?#iefix") format("embedded-opentype"), 
+	     url("../font_659690_g4ryeby6h7fa8aor/iconfont.woff") format("woff"), 
+	     url("../font_659690_g4ryeby6h7fa8aor/iconfont.ttf") format("truetype"), 
+	     url("../font_659690_g4ryeby6h7fa8aor/iconfont.svg#iconfont") format("svg");
+}
+
+.iconfont {
+	font-family: "abc" !important;
+	font-size: 1.2rem;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+}
+.back{
+	float:left;
+	width:1.2rem;
+	height:1.2rem;
+	line-height:1.2rem ;
+}
+.shopCar{
+	float:right;
+	width: 1.2rem;
+	height:1.2rem;
+	line-height: 1.2rem ;
+	position: relative;
+}
+.shopCar i{
+	font-size: .4rem;
+	height: .45rem;
+	line-height:.45rem ;
+	border-radius: .225rem;
+	background-color: #fff;
+	padding:0 .2rem ;
+	position: absolute;
+	top:0;
+	right:0;
+}
+.btn{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.btn a{
+	display:inline-block;
+	width:7.175rem;
+	height:1.575rem;
+	line-height: 1.575rem;
+	font-size:14px;
+	border-radius:3px ;
+	text-decoration: none;
+	color:#fff;
+	text-align: center;
+}
+.gm{
+	background-color: #2d3a40;
+}
+.gwc{
+	background-color: #f6846a;
+}
+.banner{
+	/*下面这里不用padding的原因是：padding做不了阴影*/
+	margin:.6rem;
+	background-color:#fff ;
+	border-radius: 10px;
+	box-shadow:0 2px 4px rgba(0,0,0,.4) ;
+	overflow: hidden;
+}
+.banner ul{
+	width:300%;
+	display:flex;
+	flex-direction: row;
+	
+}
+.banner ul li{
+	width:100%;
+}
+.banner img{
+	width:100%;
+}
+.banner ul .current{
+	display:block;
+}
+.banner_text{
+	height:50px;
+	line-height:50px ;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding:15px 0;
+}
+.banner_info{
+	margin-left:15px;
+	font-size:0.8rem ;
+	font-weight: bold;
+}
+.banner_buy{
+	width:4.5rem;
+	height:50px ;
+	font-size:0.8rem ;
+	margin-right:15px ;
+	text-decoration: none;
+	background-color: darkgrey;
+	text-align: center;
+	color:#fff;
+	border-radius:6px ;
+}
+.banner_imgs{
+	position: relative;
+}
+.banner_imgs ol{
+	position:absolute;
+	left:1rem;
+	bottom:0.75rem;
+}
+.banner_imgs ol li{
+	height:8px;
+	width:20px;
+	float:left;
+	margin-right:3px;
+	background-color: #d0d2d3;
+	border-radius:2px ;
+}
+.banner_imgs ol .current{
+	background-color: #67b0d6;
+}
+
+.des{
+	font-size:0.8rem ;
+	margin:.6rem;
+	height:60px;
+	line-height: 60px;
+	background-color:#fff ;
+	border-radius: 10px;
+	box-shadow:0 2px 4px rgba(0,0,0,.4) ;
+	font-weight:bold ;
+	display:flex;
+	flex-direction: row;
+}
+
+.add{
+	width:1.2rem;
+	height:1.2rem;
+	margin-left:15px;
+    margin-right:40px;
+}
+
+.colorAndSize{
+	font-size:0.8rem ;
+	margin:.6rem;
+	background-color:#fff ;
+	border-radius: 10px;
+	box-shadow:0 2px 4px rgba(0,0,0,.4) ;
+	font-weight:bold ;
+	display:flex;
+	flex-direction: column;
+	
+}
+.color,.size{
+	margin:10px 0 5px 0;
+	height:1.5rem;
+	line-height:1.5rem ;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+.color_img,.size_img{
+	width:1.2rem;
+	height:1.2rem;
+	margin-right: 10px;
+}
+.color_info,.size_info{
+	margin:0 auto;
+	margin-bottom:20px ;
+	font-size:0.8rem ;
+	color:darkgray;
+}
+.color_div{
+	width:50%;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin:0 auto;
+	margin-bottom:30px;
+}
+.color_one{
+	width:2.5rem;
+	height:2.5rem;
+	border-radius:5px ;
+	background-color:red ;
+	margin-right:0.2rem ;
+}
+
+.color_two{
+	width:2.5rem;
+	height:2.5rem;
+	border-radius:5px ;
+	background-color:yellow ;
+	margin-right:0.2rem ;
+}
+
+.color_three{
+	width:2.5rem;
+	height:2.5rem;
+	border-radius:5px ;
+	background-color:blueviolet ;
+	margin-right:0.2rem ;
+}
+.color_div .current{
+	display:flex ;
+	align-items: center;
+	justify-content: center;
+}
+.colorAndSize .line{
+	height:2px;
+	width:90%;
+	background-color:darkgray ;
+	margin:0 auto;
+}
+.size_div{
+	width:90%;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin:0 auto;
+	margin-bottom:30px;
+}
+.size_div div{
+	width:2.5rem;
+	height:2.5rem;
+	background-color:darkgrey ;
+	border-radius:5px ;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.size_div .current{
+	background-color:cornflowerblue;
+	color:#fff;
+}
+.addtocart{
+	width:50%;
+	height:40px;
+	line-height:40px ;
+	color:#fff;
+	font-size:.6rem ;
+	font-weight: bold;
+	background-color: #000000;
+	border-radius:5px ;
+	margin:40px auto;
+	text-align: center;
+}
+.share{
+	margin:0 .6rem;
+	font-size:0.6rem;
+	display: flex;
+	flex-direction: row;
+	align-items:center ;
+	margin-bottom: 30px;
+}
+.share .line{
+	height:2px;
+	flex:1;
+	background-color:darkgray ;
+	margin-left:20px;
+}
+.shareMethod{
+	margin:0 .6rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.shareqq,.shareweibo,.sharerenren{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+}
+.shareqq .iconfont,.shareweibo .iconfont,.sharerenren .iconfont{
+	font-size:2rem;
+	margin-right:15px;
+}
+.sanjiaoxing{
+	width:0;
+    height:0;
+   	border-left: 0.3rem solid transparent;  
+    border-top: 0.3rem solid transparent;
+	border-bottom: 0.3rem solid #fff;
+	border-right: 0.3rem solid transparent;
+    transform:rotate(45deg);
+    position: absolute;
+    top:0.2rem;
+    right:1.5rem;
+    
+    /*margin-top:0.4rem;*/
+}
+.number{
+	font-size:0.5rem;
+	height:1.2rem;
+	width:1.8rem;
+	line-height: 1.2rem;
+	background-color: #fff;
+	text-align: center;
+	clear:both;
+	border-radius: 3px;
+}
